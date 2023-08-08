@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
 
-app.get('/privacy', (req, res) => {
+app.get('/', (req, res) => {
     res.render('privacy');
 });
 
